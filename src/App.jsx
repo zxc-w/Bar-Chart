@@ -11,6 +11,11 @@ function App() {
   const w = 1000;
   const h = 600;
 
+  svg
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .classed("svg-content", true);
+
   useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json"
