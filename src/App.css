@@ -33,6 +33,9 @@ svg {
   border-radius: 3px;
   pointer-events: none;
   transition: opacity 0.2s ease;
+  max-width: 220px;
+  white-space: normal;
+  line-height: 1.4;
 }
 
 @media (max-width: 600px) {
